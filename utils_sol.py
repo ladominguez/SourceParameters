@@ -29,14 +29,19 @@ def clean_directory(dir,type_resp):
 
 def G(r, azimuth):
     # Escribe tu código aquí
-    return None    
-
-
+    
+    return 1/r
 
 
 def Q(f, azimuth):
 # Escribe tu código aquí
-    return None
+    if ((azimuth >= 260) and (azimuth <= 315)) or ((azimuth >= 100) and (azimuth <= 150)):
+        return (175.0*9/4.0)*np.power(f, 0.52)
+
+    # Towards the continent
+    else:
+        return (211.0*9/4.0)*np.power(f, 0.46)
+
 
 
 def M0_func(Mw):

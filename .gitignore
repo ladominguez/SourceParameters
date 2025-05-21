@@ -1,4 +1,10 @@
 .DS_Store
 InstrumentResponse
-utils_sol.py
+utils.py
 Michoacan
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+__pycache__/
+*.py[cod]
+venv/
+.env
